@@ -76,6 +76,7 @@ class SearchAndDisplay extends Component {
 
 
     render() {
+        let href = "#";
         return (
             <div>
                 <div className="active-cyan-3 active-cyan-4 mb-4">
@@ -87,8 +88,8 @@ class SearchAndDisplay extends Component {
                     <Button value="next" onClick={this.handlePages}>next</Button> */}
                 <nav aria-label="Page navigation example">
                     <ul className="pagination">
-                        <li className="page-item"><a className="page-link" href="#"  onClick={this.handlePages}>Previous</a></li>
-                        <li className="page-item"><a className="page-link" href="#" onClick={this.handlePages}>Next</a></li>
+                        <li className="page-item"><a className="page-link" href={href} onClick={this.handlePages}>Previous</a></li>
+                        <li className="page-item"><a className="page-link" href={href} onClick={this.handlePages}>Next</a></li>
                     </ul>
                 </nav>
             </div>
